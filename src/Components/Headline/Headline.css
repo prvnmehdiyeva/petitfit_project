@@ -1,0 +1,45 @@
+.headline {
+  position: relative;
+  margin-bottom: 70px;
+}
+.headline .image {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.headline .bg {
+  width: 1300px;
+  height: 200px;
+  background-color: #00665d;
+  transform-origin: top;
+  transform: rotate(1deg) translateX(-1%);
+  overflow: hidden;
+  z-index: 0;
+  position: absolute;
+  bottom: 200px;
+}
+.headline .content {
+  color: #fff;
+  margin: 60px auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .headline .bg {
+    width: 100%;
+    height: 58px;
+    bottom: 125px;
+  }
+  .headline .content {
+    margin: 5px 112px;
+    font-size: 40px;
+  }
+  .headline .image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}

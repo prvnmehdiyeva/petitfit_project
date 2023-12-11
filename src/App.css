@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: #eef0f4;
+  overflow-x: hidden;
+}
+
+.head {
+  font-size: 60px;
+  color: #00665d;
+  font-weight: 500;
+}
+.head-white {
+  font-size: 60px;
+  color: #fff;
+}
+.container {
+  font-family: "Dosis", sans-serif;
+  padding: 16px 30px;
+}
+.marginTop {
+  padding-top: 140px;
+}
+.paragraph {
+  font-size: 20px;
+  color: #002c28;
+  font-weight: 100;
+  line-height: 1.8rem;
+}
+
+.head {
+  font-size: 64px;
+}
+img {
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .head {
+    font-size: 46px;
+  }
+  .head-white {
+    font-size: 40px;
+  }
+  img {
+    border-radius: 0;
+  }
+}

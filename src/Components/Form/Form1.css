@@ -1,0 +1,85 @@
+.form1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  gap: 20px;
+}
+.form1 .input {
+  padding: 18px 22px;
+  border: none;
+  background-color: #578681;
+  border-radius: 6px;
+  color: #fff;
+}
+.input::placeholder {
+  color: #fff; /* Set the desired color for the placeholder text */
+}
+/* Form 2 */
+.form2 {
+  display: grid;
+  padding: 30px 50px;
+  align-items: center;
+  background-color: #dde8e7;
+  border-radius: 6px;
+  align-content: space-evenly;
+  grid-column-gap: 25px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+.form2 .input {
+  padding: 18px 30px;
+  border: none;
+  background-color: #578681;
+  border-radius: 6px;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+}
+
+.form2 button {
+  grid-column: span 2;
+  justify-items: center;
+}
+.form2 .textarea {
+  grid-column: span 2;
+  justify-items: center;
+}
+.form2 .textarea {
+  height: 60px;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 6px;
+}
+@media (max-width: 768px) {
+  .form1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  .form1 .input {
+    padding: 18px 22px;
+    border: none;
+    background-color: #578681;
+    border-radius: 6px;
+    color: #fff;
+  }
+
+  .form2 {
+    padding: 30px 20px;
+    grid-column-gap: 10px;
+    gap: 10px;
+  }
+
+  .form2 .input {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+  }
+}

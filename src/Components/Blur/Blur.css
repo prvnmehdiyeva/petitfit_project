@@ -1,0 +1,11 @@
+.timeline {
+  transition: all ease-out 400ms;
+  transform: translateY(80px);
+  /* opacity: 0;
+  visibility: hidden; */
+}
+.show {
+  transform: translate(0);
+  opacity: 1;
+  visibility: visible;
+}

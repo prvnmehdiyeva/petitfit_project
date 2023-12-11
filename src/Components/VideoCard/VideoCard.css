@@ -1,0 +1,32 @@
+.videoCard {
+  background-color: #dde8e7;
+  padding: 70px 0;
+  background-image: url(../Assets/linesdark.png);
+  background-repeat: no-repeat;
+  background-position: 860px -120px, calc(100% - 50px) 0;
+}
+.videoCard .video {
+  margin: 0 100px;
+  border-radius: 15px;
+  width: 85%;
+  display: grid;
+}
+
+.videoCard .content {
+  display: grid;
+  margin: 0 212px;
+  margin-bottom: 70px;
+  gap: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .videoCard .content {
+    display: grid;
+    margin: 0 50px;
+  }
+  .videoCard .video {
+    margin: 40px 25px;
+    width: 90%;
+  }
+}

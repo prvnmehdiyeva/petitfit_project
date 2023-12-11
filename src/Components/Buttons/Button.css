@@ -1,0 +1,58 @@
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin-top: 0px;
+  border-radius: 6px;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.btn.button-green {
+  background-color: #00665d;
+  padding: 12px 22px;
+  border: 0px solid #00665d;
+  gap: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn.button-green:hover {
+  justify-content: space-between;
+}
+.btn .btn-img {
+  color: #fff;
+  width: 10px;
+  height: 19px;
+  margin-right: 10px;
+}
+.btn.button-light {
+  gap: 10px;
+  padding: 12px 22px;
+
+  background-color: #fff;
+  border: 0px solid #fff;
+  color: #00665d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.btn.button-v3 {
+  background-color: none;
+  border: none;
+  color: #00665d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .btn.button-v3 {
+    display: none;
+  }
+}

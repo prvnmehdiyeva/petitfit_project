@@ -1,0 +1,22 @@
+.custom-alert {
+  background-color: #00825b;
+  color: #ffffff;
+  padding: 15px;
+  border: 1px solid #fdfdfd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  position: fixed;
+  top: 100px;
+  left: 30%;
+  z-index: 300000;
+  justify-content: space-between;
+  transition: height 10s ease-in;
+  overflow: hidden;
+}
+.custom-alert.hidden {
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+  margin-bottom: 0;
+}

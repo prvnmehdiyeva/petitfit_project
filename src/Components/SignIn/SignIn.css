@@ -1,0 +1,57 @@
+.email_phone {
+  margin: 40px 0;
+}
+.email_phone .size {
+  text-decoration: none;
+  color: #002c28;
+  font-size: 32px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 180ms ease-in-out;
+}
+.email_phone .size:hover {
+  color: #005a51;
+}
+.email_phone .paragraph {
+  color: #002c28;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* texts */
+.sign_texts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 20px 0;
+  background-image: url(../Assets/angleline.png);
+  background-repeat: no-repeat;
+  background-position: 503px 606px, calc(100% - 50px) 0;
+}
+.sign_texts .content {
+  width: 100%;
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+}
+.sign_texts .first_p {
+  text-transform: uppercase;
+}
+.sign_texts .content {
+  display: grid;
+  gap: 20px;
+  justify-items: start;
+}
+
+@media (max-width: 768px) {
+  .sign_texts {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sign_texts .content {
+    width: 85%;
+  }
+  .email_phone .size {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,46 @@
+.cards-paid {
+  background-image: url(../Assets/lines.png);
+  background-color: #00665d;
+  padding: 60px 0;
+  background-repeat: no-repeat;
+  background-position: 860px -120px, calc(100% - 50px) 0;
+}
+.cards-paid .content {
+  display: grid;
+  width: 70%;
+  gap: 20px;
+  align-items: start;
+  justify-items: start;
+  text-align: start;
+  color: #ffff;
+}
+
+.cards-paid .free-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.cards-paid .swiperCards {
+  display: none;
+}
+.swiperCards {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .cards-paid .content {
+    width: 80%;
+  }
+  .swiperCards {
+    display: block;
+  }
+  .fullPaidCards {
+    display: none;
+  }
+  .cards-paid .swiperCards {
+    display: block;
+  }
+  .cards-paid .fullPaidCards {
+    display: none;
+  }
+}

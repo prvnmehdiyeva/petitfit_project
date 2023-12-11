@@ -1,0 +1,42 @@
+.getMeal {
+  margin: 30px 0;
+  background: url(../Assets/drinkingwater.jpg) no-repeat center center/cover;
+  height: 560px;
+  position: relative;
+}
+.getMeal .form {
+  position: absolute;
+  background-color: #dde8e7;
+  display: grid;
+  top: 22%;
+  left: 12%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 10px;
+  gap: 20px;
+}
+.getMeal .parag {
+  text-align: center;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .getMeal {
+    margin: 30px 0;
+    background: url(../Assets/drinkingwater.jpg) no-repeat center center/cover;
+    height: 560px;
+    position: relative;
+  }
+  .getMeal .form {
+    top: 8%;
+    left: 8%;
+    right: 8%;
+    padding: 30px;
+    text-align: center;
+  }
+  .getMeal .parag {
+    text-align: center;
+    width: 90%;
+  }
+}

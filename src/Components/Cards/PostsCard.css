@@ -1,0 +1,33 @@
+.postCard {
+  background-color: #fff;
+  padding: 60px 0;
+}
+.postCard .content {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  color: #00665d;
+}
+.postCard .content .head {
+  font-size: 80px;
+}
+.postCard .free-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.postCard .swiperCards {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .postCard .fullPosts {
+    display: none;
+  }
+  .postCard .swiperCards {
+    display: block;
+  }
+}

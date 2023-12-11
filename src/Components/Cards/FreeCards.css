@@ -1,0 +1,45 @@
+.cards-free {
+  background-color: #fff;
+  padding: 60px 0;
+}
+.cards-free .content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+.cards-free .content .parag {
+  width: 55%;
+}
+.cards-free .content .head {
+  width: 80%;
+}
+.free-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-radius: 6px;
+}
+.cards-free .swiperCards {
+  display: none;
+}
+@media (max-width: 768px) {
+  .free-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fullCards {
+    display: none;
+  }
+  .cards-free .swiperCards {
+    display: block;
+  }
+  .cards-free .content .head {
+    width: 100%;
+  }
+  .cards-free .content .parag {
+    width: 70%;
+  }
+}

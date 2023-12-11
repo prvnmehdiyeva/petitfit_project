@@ -1,0 +1,43 @@
+.exercises {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+}
+.exercises .content {
+  display: grid;
+  gap: 20px;
+}
+
+.exercises .video-exercises {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  height: 700px;
+  background: none;
+}
+.head-exercise {
+  font-size: 25px;
+  color: #00665d;
+}
+.exercise {
+  font-size: 16px;
+  padding-left: 20px;
+  color: #002c28;
+  font-weight: 100;
+  line-height: 1.8rem;
+}
+@media (max-width: 768px) {
+  .exercises {
+    display: grid;
+    justify-content: start;
+    gap: 50px;
+  }
+  .exercises .video-exercises {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: 456px;
+    background: none;
+  }
+}

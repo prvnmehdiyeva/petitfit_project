@@ -1,0 +1,16 @@
+.counter {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.counter .icon {
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00a194;
+}

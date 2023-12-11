@@ -1,0 +1,138 @@
+.card {
+  background-color: #eef0f4;
+  border-radius: 10px;
+  transition: box-shadow 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 500ms cubic-bezier(0.23, 1, 0.32, 1), opacity 500ms ease,
+    -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card:hover {
+  opacity: 80%;
+  margin-top: -5px;
+}
+.card .card-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card .content-card {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 20px 15px;
+}
+.card .content-card .first {
+  display: grid;
+  gap: 5px;
+}
+.card .content-card .second {
+  display: grid;
+  justify-content: end;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-family: "Allura";
+  font-weight: Bold;
+  color: #00665d;
+  justify-items: end;
+}
+.card .content-card .second .oldPrice {
+  display: grid;
+  text-decoration: line-through;
+  color: #000;
+  font-size: 18px;
+}
+
+.card-post {
+  position: relative;
+  padding: 30px 0;
+  cursor: pointer;
+  transition: box-shadow 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 500ms cubic-bezier(0.23, 1, 0.32, 1), opacity 500ms ease,
+    -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card-post:hover {
+  opacity: 80%;
+  margin-top: -5px;
+}
+.card-post .type {
+  background-color: #739f9b;
+  position: absolute;
+  border-radius: 5px;
+  top: -40px;
+  padding: 6px;
+  text-transform: uppercase;
+}
+.card-post .card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card-post .content-card {
+  position: absolute;
+  top: 74%;
+  left: 8%;
+}
+.card-post .content-card .first {
+  border-radius: 10px;
+  background-color: #eef0f4;
+  padding: 20px;
+  width: 330px;
+  display: grid;
+  grid: 20px;
+}
+.card-post .content-card .first .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-post .content-card .first .profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .card .content-card .first {
+    display: grid;
+    gap: 5px;
+    justify-items: start;
+    text-align: left;
+  }
+  .nameItem {
+    font-size: 20px;
+  }
+  .card .content-card .type {
+    font-size: 18px;
+  }
+  .card .content-card .timeItem {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  .nobutton {
+    display: none;
+  }
+  /* ///// */
+  .card-post {
+    position: relative;
+    margin: 0;
+    text-align: left;
+  }
+  .card-post .type {
+    top: -40px;
+    padding: 6px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .card-post .content-card .first {
+    width: 230px;
+    display: grid;
+    grid: 20px;
+  }
+  .card-post .nameItem {
+    width: 230px;
+  }
+  .card-post .content-card .first .profile-img {
+    display: none;
+  }
+  .card-post .content-card .first .profileName {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
